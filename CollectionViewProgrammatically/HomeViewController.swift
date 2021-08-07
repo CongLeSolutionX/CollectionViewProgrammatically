@@ -101,7 +101,7 @@ extension HomeViewController: UICollectionViewDataSource {
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as? CollectionViewCell else {
       fatalError("Cannot dequeue collection cell")
     }
-    cell.data = sampleData[indexPath.row]
+    cell.bindingData = sampleData[indexPath.row]
     cell.backgroundColor = .blue
     return cell
   }

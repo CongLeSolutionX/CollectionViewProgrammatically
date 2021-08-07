@@ -11,9 +11,9 @@ class CollectionViewCell: UICollectionViewCell {
   lazy var imageView = makeImageView()
   lazy var label = makeLabel()
   
-  var data: SampleData? {
+  var bindingData: SampleData? {
     didSet {
-      guard let data = data else { return }
+      guard let data = bindingData else { return }
       label.text = data.imageName
       imageView.image = UIImage(named: data.imageName)
     }

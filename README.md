@@ -4,12 +4,13 @@ Initial setup:
 - setup the window with navigationController with a root view controller 
 
 Using UICollectionViewFlowLayout  to build collectionView: 
-- create a avaiable UICollectionViewFlowLayout
+- create a avaiable UICollectionViewFlowLayout anf configure it.
 - create a variable UICollectionView using defined flowlayout ealier, assign delegates to self, and register a reusable UICollectionViewCell with unique identifier
 - create a class type UICollectionViewCell with a unique static identifier string. Then, calls designated initializer
 - create extensions and conform to UICollectionView delegates (UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout)
 - add collectionview as the subview inside loadView() and setup constraints for it
-
+- back to collectionViewCell, create a UIImageView variable, configure it, make constraints  for it, and  add it as subview to contentView. Then, create a observable variable for binding data  from struct's properties.
+- back to UIViewcontroller, create sample data struct. In method  `collectionView(_ collectionView: , cellForItemAt indexPath: )`, bind data for each collection view cell.
 
 Notes: 
 - Compositional layout only  supports for iOS 13 and above 
