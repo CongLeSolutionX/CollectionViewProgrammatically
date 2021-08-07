@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class HomeViewController: UIViewController {
   private enum FlowLayoutConstant {
     static let numberOfItemsPerRow: CGFloat = 2.0
@@ -33,17 +32,32 @@ class HomeViewController: UIViewController {
     collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
     return collectionView
   }()
+
+  let sampleData = [
+    SampleData(imageName: "image1"),
+    SampleData(imageName: "image2"),
+    SampleData(imageName: "image3"),
+    SampleData(imageName: "image4"),
+    SampleData(imageName: "image5"),
+    SampleData(imageName: "image6"),
+    SampleData(imageName: "image7"),
+    SampleData(imageName: "image8"),
+    SampleData(imageName: "image9"),
+    SampleData(imageName: "image10"),
+  ]
   
   override func loadView() {
     super.loadView()
     view.backgroundColor = .red
-    view.addSubview(collectionView)
-    setupConstraints()
+    
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.title = "My Albums"
+    
+    view.addSubview(collectionView)
+    setupConstraints()
   }
 }
 
@@ -54,7 +68,8 @@ extension HomeViewController {
       collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
       collectionView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
       collectionView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-      collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+      collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor) // use this coonstraint for vertical scroll
+      // collectionView.heightAnchor.constraint(equalTo: collectionView.widthAnchor, multiplier: 0.5)// use this constraint for horizontal scroll
     ])
   }
 }
@@ -68,15 +83,19 @@ extension HomeViewController: UICollectionViewDelegate {
 
 // MARK: - UICollectionViewDataSource
 extension HomeViewController: UICollectionViewDataSource {
+  func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return 1
+  }
+  
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 100
+    return sampleData.count
   }
   
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.reuseIdentifier, for: indexPath) as? CollectionViewCell else {
       fatalError("Cannot dequeue collection cell")
     }
-    
+    cell.data = sampleData[indexPath.row]
     cell.backgroundColor = .blue
     return cell
   }

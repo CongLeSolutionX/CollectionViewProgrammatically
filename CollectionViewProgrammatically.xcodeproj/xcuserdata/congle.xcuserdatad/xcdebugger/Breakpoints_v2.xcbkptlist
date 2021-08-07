@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "80AAE2AB-9312-40BB-A393-31E048E975FB"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48254588-A59C-4305-9C2E-C08443EB522E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CollectionViewProgrammatically/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC72B401-A23B-4BA7-BBA5-85012A34116F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CollectionViewProgrammatically/CollectionViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "imageView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "AC72B401-A23B-4BA7-BBA5-85012A34116F - 10e31a82abf2b854"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __C.UIImageView in variable initialization expression of CollectionViewProgrammatically.CollectionViewCell.imageView : __C.UIImageView"
+                  moduleName = "CollectionViewProgrammatically"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/congle/Desktop/CollectionViewProgrammatically/CollectionViewProgrammatically/CollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  uuid = "AC72B401-A23B-4BA7-BBA5-85012A34116F - 7e65cc15937745dc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CollectionViewProgrammatically.CollectionViewCell.imageView.getter : __C.UIImageView"
+                  moduleName = "CollectionViewProgrammatically"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/congle/Desktop/CollectionViewProgrammatically/CollectionViewProgrammatically/CollectionViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
