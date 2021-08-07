@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class CollectionViewCell: UICollectionViewCell {
+final class CollectionViewCell: UICollectionViewCell {
   static let reuseIdentifier = "collectionViewCell"
   lazy var imageView = makeImageView()
   lazy var label = makeLabel()
@@ -39,7 +39,7 @@ extension CollectionViewCell {
     NSLayoutConstraint.activate([
       label.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 5.0),
       label.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 5.0),
-      label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+      label.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -5.0),
       
       imageView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
       imageView.heightAnchor.constraint(equalTo: contentView.heightAnchor)
@@ -52,8 +52,8 @@ extension CollectionViewCell {
   private func makeImageView() -> UIImageView {
     let view = UIImageView()
     view.layer.cornerRadius = 10
-    view.clipsToBounds = true
-    view.contentMode = .scaleToFill
+    view.layer.masksToBounds = true
+    view.contentMode = .scaleAspectFill
     return view
   }
   
