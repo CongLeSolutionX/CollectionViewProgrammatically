@@ -8,7 +8,9 @@
 import UIKit
 class CollectionViewCell: UICollectionViewCell {
   static let reuseIdentifier = "collectionViewCell"
- 
+  lazy var imageView = makeImageView()
+  lazy var label = makeLabel()
+  
   var data: SampleData? {
     didSet {
       guard let data = data else { return }
@@ -16,21 +18,7 @@ class CollectionViewCell: UICollectionViewCell {
       imageView.image = UIImage(named: data.imageName)
     }
   }
-  
-  lazy var imageView: UIImageView = {
-    let view = UIImageView()
-    view.layer.cornerRadius = 10
-    view.clipsToBounds = true
-    view.contentMode = .scaleToFill
-    return view
-  }()
-  
-  let label: UILabel = {
-    let label = UILabel()
-    label.translatesAutoresizingMaskIntoConstraints = false
-    return label
-  }()
-  
+ 
   override init(frame: CGRect) {
     super.init(frame: frame)
     contentView.addSubview(imageView)
@@ -41,7 +29,10 @@ class CollectionViewCell: UICollectionViewCell {
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
-  
+}
+
+// MARK: - Setup constraints
+extension CollectionViewCell {
   func setupConstraints() {
     imageView.translatesAutoresizingMaskIntoConstraints = false
     
@@ -53,5 +44,22 @@ class CollectionViewCell: UICollectionViewCell {
       imageView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
       imageView.heightAnchor.constraint(equalTo: contentView.heightAnchor)
     ])
+  }
+}
+
+// MARK: - Setup UI components
+extension CollectionViewCell {
+  private func makeImageView() -> UIImageView {
+    let view = UIImageView()
+    view.layer.cornerRadius = 10
+    view.clipsToBounds = true
+    view.contentMode = .scaleToFill
+    return view
+  }
+  
+  private func makeLabel() -> UILabel {
+    let label = UILabel()
+    label.translatesAutoresizingMaskIntoConstraints = false
+    return label
   }
 }

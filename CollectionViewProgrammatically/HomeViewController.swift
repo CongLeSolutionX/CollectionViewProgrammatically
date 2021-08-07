@@ -11,27 +11,8 @@ class HomeViewController: UIViewController {
     static let numberOfItemsPerRow: CGFloat = 2.0
   }
   
-  lazy var flowLayout: UICollectionViewFlowLayout = {
-    let layout = UICollectionViewFlowLayout()
-    layout.scrollDirection = .vertical
-    /// The `UICollectionViewDelegateFlowLayout` has similar methods to return the
-    /// following flags: `minimumLineSpacing`, `minimumInteritemSpacing`, and `sectionInset`.
-    /// But, we nested these flags in this lazy var for oranization and maintenance purposes
-    layout.minimumLineSpacing = 5.0
-    layout.minimumInteritemSpacing = 5.0
-    layout.sectionInset = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
-    return layout
-  }()
-  
-  lazy var collectionView: UICollectionView = {
-    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
-    collectionView.translatesAutoresizingMaskIntoConstraints = false
-    collectionView.dataSource = self
-    collectionView.delegate = self
-    collectionView.backgroundColor = .yellow
-    collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
-    return collectionView
-  }()
+  lazy var flowLayout = makeFlowLayout()
+  lazy var collectionView = makeCollectionView()
 
   let sampleData = [
     SampleData(imageName: "image1"),
@@ -49,19 +30,18 @@ class HomeViewController: UIViewController {
   override func loadView() {
     super.loadView()
     view.backgroundColor = .red
-    
+    view.addSubview(collectionView)
+    setupConstraints()
   }
   
   override func viewDidLoad() {
     super.viewDidLoad()
     navigationItem.title = "My Albums"
     
-    view.addSubview(collectionView)
-    setupConstraints()
   }
 }
 
-//MARK: -
+//MARK: - Setup constraints
 extension HomeViewController {
   func setupConstraints() {
     NSLayoutConstraint.activate([
@@ -71,6 +51,32 @@ extension HomeViewController {
       collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor) // use this coonstraint for vertical scroll
       // collectionView.heightAnchor.constraint(equalTo: collectionView.widthAnchor, multiplier: 0.5)// use this constraint for horizontal scroll
     ])
+  }
+}
+
+// MARK: - Setup UI components
+extension HomeViewController {
+  
+  private func makeFlowLayout() -> UICollectionViewFlowLayout {
+    let layout = UICollectionViewFlowLayout()
+    layout.scrollDirection = .vertical
+    /// The `UICollectionViewDelegateFlowLayout` has similar methods to return the
+    /// following flags: `minimumLineSpacing`, `minimumInteritemSpacing`, and `sectionInset`.
+    /// But, we nested these flags in this lazy var for oranization and maintenance purposes
+    layout.minimumLineSpacing = 5.0
+    layout.minimumInteritemSpacing = 5.0
+    layout.sectionInset = UIEdgeInsets(top: 5.0, left: 5.0, bottom: 5.0, right: 5.0)
+    return layout
+  }
+  
+  private func makeCollectionView() -> UICollectionView {
+    let collectionView = UICollectionView(frame: .zero, collectionViewLayout: flowLayout)
+    collectionView.translatesAutoresizingMaskIntoConstraints = false
+    collectionView.dataSource = self
+    collectionView.delegate = self
+    collectionView.backgroundColor = .yellow
+    collectionView.register(CollectionViewCell.self, forCellWithReuseIdentifier: CollectionViewCell.reuseIdentifier)
+    return collectionView
   }
 }
 
