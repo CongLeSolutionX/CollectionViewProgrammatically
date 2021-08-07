@@ -6,7 +6,7 @@
 //
 
 import UIKit
-// A sumpplementary view used for section backgrounds in UICollectionViewCompositionalLayout
+// A supplementary view used for section backgrounds in UICollectionViewCompositionalLayout
 final class BackgroundSupplementaryView: UICollectionReusableView {
   override init(frame: CGRect) {
     super.init(frame: frame)
