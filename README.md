@@ -14,7 +14,9 @@ Initial setup:
 
 **Diagram of a flow layout with items laid out in horizontal lines within a section**
 
-<img src="./Flow-layout.png" width=300 height=600 align=center>
+<p align="center">
+<img src="./Flow-layout.png" width=300 height=500>
+</p>
 
 ## Using Compositional Layout to build collectioonView: 
 - remove outdated FlowLayout logic and methods
@@ -25,7 +27,9 @@ Initial setup:
 
 **Diagram of a compositional layout with items nested in groups within a section**
 
+<p align="center">
 <img src="./Compositional-layout.png" width=300 height=600 align=center>
+</p>
 
 ## Notes: 
 - Compositional layout only supports for iOS 13 and above 
