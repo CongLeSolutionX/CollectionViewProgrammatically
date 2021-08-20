@@ -4,6 +4,7 @@
 //
 //  Created by Cong Le on 8/19/21.
 //
+// Reference: https://github.com/andrei-blaj/appstoreclone
 
 import Foundation
 import UIKit
