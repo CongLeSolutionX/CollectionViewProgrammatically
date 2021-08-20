@@ -9,7 +9,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
-  var navigationController: UINavigationController?
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     
     // setup the window
@@ -18,9 +18,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.backgroundColor = .systemBackground
     
     // setup the view controllers
-    let mainVC = HomeViewController()
-    navigationController = UINavigationController(rootViewController: mainVC)
-    window?.rootViewController = navigationController
+    let firstVC = UINavigationController(rootViewController: CompositionalLayoutViewController())
+    firstVC.title = "Compositional Layout"
+    firstVC.tabBarItem.image = UIImage(systemName: "house")
+    
+    let secondVC = UINavigationController(rootViewController: AppStoreLayoutClone())
+    secondVC.title = "App Store Layout"
+    secondVC.tabBarItem.image = UIImage(systemName: "bell")
+    
+    // Setup Tabbar view coontroller
+    let tabBarVC = UITabBarController()
+    tabBarVC.setViewControllers([firstVC,secondVC ], animated: true)
+    tabBarVC.modalPresentationStyle = .fullScreen
+
+    window?.rootViewController = tabBarVC
+    
     return true
   }
 }

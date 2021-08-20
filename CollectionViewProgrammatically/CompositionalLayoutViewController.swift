@@ -6,7 +6,7 @@
 //
 
 import UIKit
-class HomeViewController: UIViewController {
+class CompositionalLayoutViewController: UIViewController {
   let categoryHeaderId = "categoryHeaderId"
   let headerId = "headerId"
   
@@ -38,13 +38,14 @@ class HomeViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    navigationItem.title = "My Albums"
+    navigationItem.title = "Compositional Layout View Controller"
     navigationItem.largeTitleDisplayMode = .always
+  
   }
 }
 
 //MARK: - Setup constraints
-extension HomeViewController {
+extension CompositionalLayoutViewController {
   func setupConstraints() {
     NSLayoutConstraint.activate([
       collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -57,7 +58,7 @@ extension HomeViewController {
 }
 
 // MARK: - Setup UI components
-extension HomeViewController {
+extension CompositionalLayoutViewController {
   private func makeCollectionView() -> UICollectionView {
     let compositionalLayout = createCompositionalLayout()
     compositionalLayout.register(BackgroundSupplementaryView.self, forDecorationViewOfKind: "background")
@@ -75,7 +76,7 @@ extension HomeViewController {
 }
 
 // MARK: - Helper methods to crete compositionl Layout
-extension HomeViewController {
+extension CompositionalLayoutViewController {
   /// CompositionalLayout feature is only available for iOS 13 and above
   /// Compositional Layout support for both portrait and landscape mode without extra contraints
   private func createCompositionalLayout() -> UICollectionViewCompositionalLayout {
@@ -243,14 +244,14 @@ extension HomeViewController {
 }
 
 //MARK: - UICollectionViewDelegate
-extension HomeViewController: UICollectionViewDelegate {
+extension CompositionalLayoutViewController: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     print("Clicked on collection cell at indexpath \(indexPath.row)")
   }
 }
 
 // MARK: - UICollectionViewDataSource
-extension HomeViewController: UICollectionViewDataSource {
+extension CompositionalLayoutViewController: UICollectionViewDataSource {
   func numberOfSections(in collectionView: UICollectionView) -> Int {
     return 4
   }
