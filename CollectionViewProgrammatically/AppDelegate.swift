@@ -20,15 +20,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // setup the view controllers
     let firstVC = UINavigationController(rootViewController: CompositionalLayoutViewController())
     firstVC.title = "Compositional Layout"
-    firstVC.tabBarItem.image = UIImage(systemName: "house")
+    firstVC.tabBarItem.image = UIImage(systemName: "rectangle.3.offgrid")
     
-    let secondVC = UINavigationController(rootViewController: AppStoreLayoutClone())
-    secondVC.title = "App Store Layout"
-    secondVC.tabBarItem.image = UIImage(systemName: "bell")
+    let secondVC = UINavigationController(rootViewController: FlowLayoutViewController())
+    secondVC.title = "Flow Layout"
+    secondVC.tabBarItem.image = UIImage(systemName: "square.grid.3x2.fill")
+    
+    let thirdVC = UINavigationController(rootViewController: AppStoreLayoutViewController())
+    thirdVC.title = "App Store Layout"
+    thirdVC.tabBarItem.image = UIImage(systemName: "applelogo")
     
     // Setup Tabbar view coontroller
     let tabBarVC = UITabBarController()
-    tabBarVC.setViewControllers([firstVC,secondVC ], animated: true)
+    tabBarVC.setViewControllers([firstVC,secondVC, thirdVC], animated: true)
     tabBarVC.modalPresentationStyle = .fullScreen
 
     window?.rootViewController = tabBarVC

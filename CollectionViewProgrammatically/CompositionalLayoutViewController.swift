@@ -16,19 +16,6 @@ class CompositionalLayoutViewController: UIViewController {
   
   lazy var collectionView = makeCollectionView()
   
-  let sampleData = [
-    SampleData(imageName: "image1"),
-    SampleData(imageName: "image2"),
-    SampleData(imageName: "image3"),
-    SampleData(imageName: "image4"),
-    SampleData(imageName: "image5"),
-    SampleData(imageName: "image6"),
-    SampleData(imageName: "image7"),
-    SampleData(imageName: "image8"),
-    SampleData(imageName: "image9"),
-    SampleData(imageName: "image10"),
-  ]
-  
   override func loadView() {
     super.loadView()
     view.backgroundColor = .red
