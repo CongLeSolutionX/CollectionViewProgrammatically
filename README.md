@@ -12,7 +12,9 @@ Initial setup:
 - back to collectionViewCell, create a UIImageView variable, configure it, make constraints  for it, and  add it as subview to contentView. Then, create a observable variable for binding data  from struct's properties.
 - back to UIViewcontroller, create sample data struct. In method  `collectionView(_ collectionView: , cellForItemAt indexPath: )`, bind data for each collection view cell.
 
-![Diagram of a flow layout with items laid out in horizontal lines within a section](./Flow-layout.png)
+**Diagram of a flow layout with items laid out in horizontal lines within a section**
+
+<img src="./Flow-layout.png" width=300 height=600 align=center>
 
 ## Using Compositional Layout to build collectioonView: 
 - remove outdated FlowLayout logic and methods
@@ -21,7 +23,9 @@ Initial setup:
 - add category header title for each section
 - add background supplementary view for 2 sections
 
-![Diagram of a compositional layout with items nested in groups within a section](./Compositional-layout.png)
+**Diagram of a compositional layout with items nested in groups within a section**
+
+<img src="./Compositional-layout.png" width=300 height=600 align=center>
 
 ## Notes: 
 - Compositional layout only supports for iOS 13 and above 
