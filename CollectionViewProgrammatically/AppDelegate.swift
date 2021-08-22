@@ -18,23 +18,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.backgroundColor = .systemBackground
     
     // setup the view controllers
-    let firstVC = UINavigationController(rootViewController: CompositionalLayoutViewController())
-    firstVC.title = "Compositional Layout"
-    firstVC.tabBarItem.image = UIImage(systemName: "rectangle.3.offgrid")
+    let firstVC = UINavigationController(rootViewController: FlowLayoutViewController())
+    firstVC.title = "Flow Layout"
+    firstVC.tabBarItem.image = UIImage(systemName: "square.grid.3x2.fill")
     
-    let secondVC = UINavigationController(rootViewController: FlowLayoutViewController())
-    secondVC.title = "Flow Layout"
-    secondVC.tabBarItem.image = UIImage(systemName: "square.grid.3x2.fill")
+    let secondVC = UINavigationController(rootViewController: CompositionalLayoutViewController())
+    secondVC.title = "Compositional Layout"
+    secondVC.tabBarItem.image = UIImage(systemName: "rectangle.3.offgrid")
     
-    let thirdVC = UINavigationController(rootViewController: AppStoreLayoutViewController())
+    let thirdVC = UINavigationController(rootViewController: AppStoreTodayLayoutViewController())
     thirdVC.title = "App Store Layout"
     thirdVC.tabBarItem.image = UIImage(systemName: "applelogo")
     
-    // Setup Tabbar view coontroller
+    // Setup Tabbar view controller
     let tabBarVC = UITabBarController()
-    tabBarVC.setViewControllers([firstVC,secondVC, thirdVC], animated: true)
-    tabBarVC.modalPresentationStyle = .fullScreen
-
+    tabBarVC.setViewControllers([firstVC, secondVC, thirdVC], animated: true)
+        tabBarVC.modalPresentationStyle = .fullScreen
+    
     window?.rootViewController = tabBarVC
     
     return true
