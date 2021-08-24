@@ -73,7 +73,7 @@ class AppStoreTodayLayoutViewController: UIViewController {
     return tableView
   }()
   
-//  let cardViewData: [CardViewModel] = CardsData
+  let cardViewData: [CardViewModel] = CardsData.shared.cards
   
   override func viewDidLoad() {
     configureView()
@@ -118,7 +118,7 @@ extension AppStoreTodayLayoutViewController {
       cardsTableView.topAnchor.constraint(equalTo: topView.bottomAnchor),
       cardsTableView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
       cardsTableView.widthAnchor.constraint(equalToConstant: view.frame.size.width),
-      cardsTableView.heightAnchor.constraint(equalToConstant: CGFloat(450 * 5)),
+      cardsTableView.heightAnchor.constraint(equalToConstant: CGFloat(450 * cardViewData.count)),
       cardsTableView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor)
     ])
   }
@@ -141,11 +141,33 @@ extension AppStoreTodayLayoutViewController: UITableViewDelegate {
 //MARK: - UITableViewDataSource
 extension AppStoreTodayLayoutViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 5
+    return cardViewData.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cardCell = tableView.dequeueReusableCell(forIndexPath: indexPath) as GenericTableViewCell<CardView>
+    let cardViewModel = cardViewData[indexPath.row]
+    
+    guard let cellView = cardCell.cellView else {
+      let appView = AppView(cardViewModel.app)
+      if let appViewModel = cardViewModel.app {
+        appView?.configure(with: appViewModel)
+      }
+      
+      let cardView = CardView(cardModel: cardViewModel, appView: appView)
+      cardCell.cellView = cardView
+      
+      return cardCell
+    }
+    
+    cellView.configure(with: cardViewModel)
+    cardCell.clipsToBounds = false
+    cardCell.contentView.clipsToBounds = false
+    cardCell.cellView?.clipsToBounds = false
+    
+    cardCell.layer.masksToBounds = false
+    cardCell.contentView.layer.masksToBounds = false
+    cardCell.cellView?.layer.masksToBounds = false
     
     return cardCell
   }

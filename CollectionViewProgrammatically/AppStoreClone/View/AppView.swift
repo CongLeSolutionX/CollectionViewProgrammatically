@@ -64,12 +64,32 @@ class AppView: UIView {
       return stackView
   }()
   
-//  var viewModel: AppViewModel
+  private let appViewType: AppViewType
   
+  var viewModel: AppViewModel
+  init?(_ viewModel: AppViewModel?) {
+    guard let viewModel = viewModel else { return nil }
+    self.viewModel = viewModel
+    self.appViewType = viewModel.appViewType
+    super.init(frame: .zero)
+  }
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
 }
 
 extension AppView {
+  func configure(with viewModel: AppViewModel) {
+    self.viewModel = viewModel
+    
+  }
+  
   func configureViews() {
-//    iconImageView.configure
+    iconImageView.configureAppIconView(forImage: viewModel.iconImage, size: appViewType.imageSize)
+    titleLabel.configureAppHeaderLabel(withText: viewModel.name)
+    subtitleLabel.configureAppSubHeaderLabel(withText: viewModel.category.description.uppercasedFirstLetter)
+    buttonSubtitleLabel.configureTinyLabel(withText: "In-App Purchases")
+    getButton.roundedActionButton(withText: viewModel.appAccess.description)
   }
 }

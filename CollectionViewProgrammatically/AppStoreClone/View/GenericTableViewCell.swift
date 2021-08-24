@@ -29,6 +29,7 @@ class GenericTableViewCell<View: UIView>: UITableViewCell {
   
   private func setupCellView() {
     guard let cellView = cellView else { return }
+    
     addSubview(cellView)
     cellView.translatesAutoresizingMaskIntoConstraints = false
     

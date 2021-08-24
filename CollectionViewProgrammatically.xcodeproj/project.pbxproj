@@ -12,6 +12,10 @@
 		4C2ACE3226D1E986006C9DD7 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3126D1E986006C9DD7 /* UITableView+Extension.swift */; };
 		4C2ACE3426D1E9D3006C9DD7 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3326D1E9D3006C9DD7 /* String+Extension.swift */; };
 		4C2ACE3626D1EF0A006C9DD7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3526D1EF0A006C9DD7 /* UIImage+Extension.swift */; };
+		4C2ACE3826D325BA006C9DD7 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3726D325BA006C9DD7 /* UIImageView+Extension.swift */; };
+		4C2ACE3A26D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3926D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift */; };
+		4C2ACE3C26D326C2006C9DD7 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3B26D326C2006C9DD7 /* UIButton+Extension.swift */; };
+		4C2ACE3E26D46C43006C9DD7 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3D26D46C43006C9DD7 /* UIWindow+Extension.swift */; };
 		4C5E3E3226CFB23600F85CFE /* FlowLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E3126CFB23600F85CFE /* FlowLayoutViewController.swift */; };
 		4C5E3E3426CFB38E00F85CFE /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E3326CFB38E00F85CFE /* GlobalHelpers.swift */; };
 		4C5E3E3826D02B5400F85CFE /* CardTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E3726D02B5400F85CFE /* CardTransitionManager.swift */; };
@@ -39,6 +43,10 @@
 		4C2ACE3126D1E986006C9DD7 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		4C2ACE3326D1E9D3006C9DD7 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		4C2ACE3526D1EF0A006C9DD7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		4C2ACE3726D325BA006C9DD7 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		4C2ACE3926D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		4C2ACE3B26D326C2006C9DD7 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		4C2ACE3D26D46C43006C9DD7 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
 		4C5E3E3126CFB23600F85CFE /* FlowLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutViewController.swift; sourceTree = "<group>"; };
 		4C5E3E3326CFB38E00F85CFE /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		4C5E3E3726D02B5400F85CFE /* CardTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransitionManager.swift; sourceTree = "<group>"; };
@@ -119,6 +127,10 @@
 				4C2ACE3126D1E986006C9DD7 /* UITableView+Extension.swift */,
 				4C2ACE3326D1E9D3006C9DD7 /* String+Extension.swift */,
 				4C2ACE3526D1EF0A006C9DD7 /* UIImage+Extension.swift */,
+				4C2ACE3726D325BA006C9DD7 /* UIImageView+Extension.swift */,
+				4C2ACE3926D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift */,
+				4C2ACE3B26D326C2006C9DD7 /* UIButton+Extension.swift */,
+				4C2ACE3D26D46C43006C9DD7 /* UIWindow+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -257,8 +269,11 @@
 			files = (
 				4C2ACE3426D1E9D3006C9DD7 /* String+Extension.swift in Sources */,
 				4C5E3E4326D069A900F85CFE /* CardView.swift in Sources */,
+				4C2ACE3A26D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift in Sources */,
 				4C5E3E3426CFB38E00F85CFE /* GlobalHelpers.swift in Sources */,
 				4C2ACE3226D1E986006C9DD7 /* UITableView+Extension.swift in Sources */,
+				4C2ACE3C26D326C2006C9DD7 /* UIButton+Extension.swift in Sources */,
+				4C2ACE3E26D46C43006C9DD7 /* UIWindow+Extension.swift in Sources */,
 				4C5E3E4D26D0712600F85CFE /* AppViewModel.swift in Sources */,
 				4C5E3E4B26D06FB300F85CFE /* BackgroundType.swift in Sources */,
 				4C5E3E3226CFB23600F85CFE /* FlowLayoutViewController.swift in Sources */,
@@ -273,6 +288,7 @@
 				4C2ACE3626D1EF0A006C9DD7 /* UIImage+Extension.swift in Sources */,
 				4C2ACE2E26D1E341006C9DD7 /* CardsData.swift in Sources */,
 				4C5E3E3E26D04A7500F85CFE /* GenericTableViewCell.swift in Sources */,
+				4C2ACE3826D325BA006C9DD7 /* UIImageView+Extension.swift in Sources */,
 				4CBC12EC26BDB7C90010DD43 /* CollectionViewCell.swift in Sources */,
 				4CBC12EE26BE4E870010DD43 /* SampleData.swift in Sources */,
 				4C5E3E4726D06B0700F85CFE /* CardViewModel.swift in Sources */,

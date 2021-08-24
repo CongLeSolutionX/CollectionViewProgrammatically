@@ -18,4 +18,9 @@ extension String {
       return nil
     }
   }
+  
+  var uppercasedFirstLetter: String {
+      guard !self.isEmpty else { return self }
+      return prefix(1).uppercased() + dropFirst()
+  }
 }
