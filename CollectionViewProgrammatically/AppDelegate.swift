@@ -26,13 +26,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     secondVC.title = "Compositional Layout"
     secondVC.tabBarItem.image = UIImage(systemName: "rectangle.3.offgrid")
     
-    let thirdVC = UINavigationController(rootViewController: AppStoreTodayLayoutViewController())
-    thirdVC.title = "App Store Layout"
+    let thirdVC = UINavigationController(rootViewController: AppCenterLayoutUsingTableViewCellsController())
+    thirdVC.title = "App Store Table Cells"
     thirdVC.tabBarItem.image = UIImage(systemName: "applelogo")
+    
+    let fourthVC = UINavigationController(rootViewController: AppStoreViaCollectionViewDiffable())
+    fourthVC.title = "App Center Diffable"
+    fourthVC.tabBarItem.image = UIImage(systemName: "car")
     
     // Setup Tabbar view controller
     let tabBarVC = UITabBarController()
-    tabBarVC.setViewControllers([firstVC, secondVC, thirdVC], animated: true)
+    tabBarVC.setViewControllers([firstVC, secondVC, thirdVC, fourthVC], animated: true)
         tabBarVC.modalPresentationStyle = .fullScreen
     
     window?.rootViewController = tabBarVC

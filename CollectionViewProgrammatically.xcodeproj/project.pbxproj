@@ -16,10 +16,20 @@
 		4C2ACE3A26D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3926D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift */; };
 		4C2ACE3C26D326C2006C9DD7 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3B26D326C2006C9DD7 /* UIButton+Extension.swift */; };
 		4C2ACE3E26D46C43006C9DD7 /* UIWindow+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE3D26D46C43006C9DD7 /* UIWindow+Extension.swift */; };
+		4C2ACE4126D49953006C9DD7 /* AppStoreViaCollectionViewDiffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE4026D49953006C9DD7 /* AppStoreViaCollectionViewDiffable.swift */; };
+		4C2ACE4326D49AB3006C9DD7 /* AppStoreData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C2ACE4226D49AB3006C9DD7 /* AppStoreData.json */; };
+		4C2ACE4526D49AF1006C9DD7 /* Bundle+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE4426D49AF1006C9DD7 /* Bundle+extension.swift */; };
+		4C2ACE4726D49D0B006C9DD7 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE4626D49D0B006C9DD7 /* Section.swift */; };
+		4C2ACE4926D49D44006C9DD7 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE4826D49D44006C9DD7 /* App.swift */; };
+		4C2ACE4D26D4C418006C9DD7 /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE4C26D4C418006C9DD7 /* SectionHeader.swift */; };
+		4C2ACE4F26D4C4B2006C9DD7 /* FeaturedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE4E26D4C4B2006C9DD7 /* FeaturedCell.swift */; };
+		4C2ACE5126D4C4FB006C9DD7 /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE5026D4C4FB006C9DD7 /* SelfConfiguringCell.swift */; };
+		4C2ACE5326D4C5B5006C9DD7 /* SmallTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE5226D4C5B5006C9DD7 /* SmallTableCell.swift */; };
+		4C2ACE5526D4C635006C9DD7 /* MediumTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2ACE5426D4C635006C9DD7 /* MediumTableCell.swift */; };
 		4C5E3E3226CFB23600F85CFE /* FlowLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E3126CFB23600F85CFE /* FlowLayoutViewController.swift */; };
 		4C5E3E3426CFB38E00F85CFE /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E3326CFB38E00F85CFE /* GlobalHelpers.swift */; };
 		4C5E3E3826D02B5400F85CFE /* CardTransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E3726D02B5400F85CFE /* CardTransitionManager.swift */; };
-		4C5E3E3C26D02F3600F85CFE /* AppStoreTodayLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E3B26D02F3600F85CFE /* AppStoreTodayLayoutViewController.swift */; };
+		4C5E3E3C26D02F3600F85CFE /* AppCenterLayoutUsingTableViewCellsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E3B26D02F3600F85CFE /* AppCenterLayoutUsingTableViewCellsController.swift */; };
 		4C5E3E3E26D04A7500F85CFE /* GenericTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E3D26D04A7500F85CFE /* GenericTableViewCell.swift */; };
 		4C5E3E4126D068D700F85CFE /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E4026D068D700F85CFE /* UIColor+Extension.swift */; };
 		4C5E3E4326D069A900F85CFE /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3E4226D069A900F85CFE /* CardView.swift */; };
@@ -47,10 +57,20 @@
 		4C2ACE3926D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+CGFloat+Extensions.swift"; sourceTree = "<group>"; };
 		4C2ACE3B26D326C2006C9DD7 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		4C2ACE3D26D46C43006C9DD7 /* UIWindow+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extension.swift"; sourceTree = "<group>"; };
+		4C2ACE4026D49953006C9DD7 /* AppStoreViaCollectionViewDiffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreViaCollectionViewDiffable.swift; sourceTree = "<group>"; };
+		4C2ACE4226D49AB3006C9DD7 /* AppStoreData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = AppStoreData.json; sourceTree = "<group>"; };
+		4C2ACE4426D49AF1006C9DD7 /* Bundle+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+extension.swift"; sourceTree = "<group>"; };
+		4C2ACE4626D49D0B006C9DD7 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		4C2ACE4826D49D44006C9DD7 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		4C2ACE4C26D4C418006C9DD7 /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		4C2ACE4E26D4C4B2006C9DD7 /* FeaturedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCell.swift; sourceTree = "<group>"; };
+		4C2ACE5026D4C4FB006C9DD7 /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
+		4C2ACE5226D4C5B5006C9DD7 /* SmallTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallTableCell.swift; sourceTree = "<group>"; };
+		4C2ACE5426D4C635006C9DD7 /* MediumTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediumTableCell.swift; sourceTree = "<group>"; };
 		4C5E3E3126CFB23600F85CFE /* FlowLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayoutViewController.swift; sourceTree = "<group>"; };
 		4C5E3E3326CFB38E00F85CFE /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		4C5E3E3726D02B5400F85CFE /* CardTransitionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTransitionManager.swift; sourceTree = "<group>"; };
-		4C5E3E3B26D02F3600F85CFE /* AppStoreTodayLayoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreTodayLayoutViewController.swift; sourceTree = "<group>"; };
+		4C5E3E3B26D02F3600F85CFE /* AppCenterLayoutUsingTableViewCellsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCenterLayoutUsingTableViewCellsController.swift; sourceTree = "<group>"; };
 		4C5E3E3D26D04A7500F85CFE /* GenericTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewCell.swift; sourceTree = "<group>"; };
 		4C5E3E4026D068D700F85CFE /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4C5E3E4226D069A900F85CFE /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -90,6 +110,38 @@
 			path = LocalData;
 			sourceTree = "<group>";
 		};
+		4C2ACE3F26D49851006C9DD7 /* AppStoreViaCollectionViewDiffable */ = {
+			isa = PBXGroup;
+			children = (
+				4C2ACE4026D49953006C9DD7 /* AppStoreViaCollectionViewDiffable.swift */,
+				4C2ACE5426D4C635006C9DD7 /* MediumTableCell.swift */,
+				4C2ACE5226D4C5B5006C9DD7 /* SmallTableCell.swift */,
+				4C2ACE4E26D4C4B2006C9DD7 /* FeaturedCell.swift */,
+				4C2ACE5026D4C4FB006C9DD7 /* SelfConfiguringCell.swift */,
+				4C2ACE4C26D4C418006C9DD7 /* SectionHeader.swift */,
+				4C2ACE4A26D49D58006C9DD7 /* LocalData */,
+			);
+			path = AppStoreViaCollectionViewDiffable;
+			sourceTree = "<group>";
+		};
+		4C2ACE4A26D49D58006C9DD7 /* LocalData */ = {
+			isa = PBXGroup;
+			children = (
+				4C2ACE4B26D49D6D006C9DD7 /* Model */,
+				4C2ACE4226D49AB3006C9DD7 /* AppStoreData.json */,
+			);
+			path = LocalData;
+			sourceTree = "<group>";
+		};
+		4C2ACE4B26D49D6D006C9DD7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4C2ACE4626D49D0B006C9DD7 /* Section.swift */,
+				4C2ACE4826D49D44006C9DD7 /* App.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4C5E3E3526CFB5FA00F85CFE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,17 +159,17 @@
 			path = Transition;
 			sourceTree = "<group>";
 		};
-		4C5E3E3926D02F0700F85CFE /* AppStoreClone */ = {
+		4C5E3E3926D02F0700F85CFE /* AppStoreCloneViaTableViewCells */ = {
 			isa = PBXGroup;
 			children = (
-				4C5E3E3B26D02F3600F85CFE /* AppStoreTodayLayoutViewController.swift */,
+				4C5E3E3B26D02F3600F85CFE /* AppCenterLayoutUsingTableViewCellsController.swift */,
 				4C2ACE2C26D1E316006C9DD7 /* LocalData */,
 				4C5E3E4526D06AF700F85CFE /* ViewModel */,
 				4C5E3E4426D06AC900F85CFE /* View */,
 				4C5E3E3626D02B3700F85CFE /* Transition */,
 				4C5E3E4A26D06FB300F85CFE /* BackgroundType.swift */,
 			);
-			path = AppStoreClone;
+			path = AppStoreCloneViaTableViewCells;
 			sourceTree = "<group>";
 		};
 		4C5E3E3F26D068B600F85CFE /* Extensions */ = {
@@ -131,6 +183,7 @@
 				4C2ACE3926D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift */,
 				4C2ACE3B26D326C2006C9DD7 /* UIButton+Extension.swift */,
 				4C2ACE3D26D46C43006C9DD7 /* UIWindow+Extension.swift */,
+				4C2ACE4426D49AF1006C9DD7 /* Bundle+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -179,7 +232,8 @@
 				4C5E3E3326CFB38E00F85CFE /* GlobalHelpers.swift */,
 				4CBC12ED26BE4E870010DD43 /* SampleData.swift */,
 				4CBC12E026BDB74B0010DD43 /* Assets.xcassets */,
-				4C5E3E3926D02F0700F85CFE /* AppStoreClone */,
+				4C2ACE3F26D49851006C9DD7 /* AppStoreViaCollectionViewDiffable */,
+				4C5E3E3926D02F0700F85CFE /* AppStoreCloneViaTableViewCells */,
 				4CBC12E226BDB74B0010DD43 /* LaunchScreen.storyboard */,
 				4C5E3E3526CFB5FA00F85CFE /* ViewControllers */,
 				4CBC12EF26BE7BA70010DD43 /* Views */,
@@ -255,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBC12E426BDB74B0010DD43 /* LaunchScreen.storyboard in Resources */,
+				4C2ACE4326D49AB3006C9DD7 /* AppStoreData.json in Resources */,
 				4C2ACE3026D1E3C1006C9DD7 /* CardsData.json in Resources */,
 				4CBC12E126BDB74B0010DD43 /* Assets.xcassets in Resources */,
 			);
@@ -268,7 +323,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C2ACE3426D1E9D3006C9DD7 /* String+Extension.swift in Sources */,
+				4C2ACE4526D49AF1006C9DD7 /* Bundle+extension.swift in Sources */,
+				4C2ACE4D26D4C418006C9DD7 /* SectionHeader.swift in Sources */,
 				4C5E3E4326D069A900F85CFE /* CardView.swift in Sources */,
+				4C2ACE4926D49D44006C9DD7 /* App.swift in Sources */,
 				4C2ACE3A26D3266A006C9DD7 /* UILabel+CGFloat+Extensions.swift in Sources */,
 				4C5E3E3426CFB38E00F85CFE /* GlobalHelpers.swift in Sources */,
 				4C2ACE3226D1E986006C9DD7 /* UITableView+Extension.swift in Sources */,
@@ -277,18 +335,24 @@
 				4C5E3E4D26D0712600F85CFE /* AppViewModel.swift in Sources */,
 				4C5E3E4B26D06FB300F85CFE /* BackgroundType.swift in Sources */,
 				4C5E3E3226CFB23600F85CFE /* FlowLayoutViewController.swift in Sources */,
+				4C2ACE5526D4C635006C9DD7 /* MediumTableCell.swift in Sources */,
 				4C5E3E4926D06EF200F85CFE /* AppView.swift in Sources */,
 				4CBC12F326BF46970010DD43 /* BackgroundSupplementaryView.swift in Sources */,
-				4C5E3E3C26D02F3600F85CFE /* AppStoreTodayLayoutViewController.swift in Sources */,
+				4C5E3E3C26D02F3600F85CFE /* AppCenterLayoutUsingTableViewCellsController.swift in Sources */,
 				4C5E3E3826D02B5400F85CFE /* CardTransitionManager.swift in Sources */,
 				4CBC12DC26BDB7480010DD43 /* CompositionalLayoutViewController.swift in Sources */,
 				4CBC12F126BE7BC60010DD43 /* CategoryHeaderView.swift in Sources */,
+				4C2ACE4726D49D0B006C9DD7 /* Section.swift in Sources */,
+				4C2ACE4F26D4C4B2006C9DD7 /* FeaturedCell.swift in Sources */,
 				4C5E3E4126D068D700F85CFE /* UIColor+Extension.swift in Sources */,
 				4CBC12D826BDB7480010DD43 /* AppDelegate.swift in Sources */,
+				4C2ACE4126D49953006C9DD7 /* AppStoreViaCollectionViewDiffable.swift in Sources */,
 				4C2ACE3626D1EF0A006C9DD7 /* UIImage+Extension.swift in Sources */,
+				4C2ACE5126D4C4FB006C9DD7 /* SelfConfiguringCell.swift in Sources */,
 				4C2ACE2E26D1E341006C9DD7 /* CardsData.swift in Sources */,
 				4C5E3E3E26D04A7500F85CFE /* GenericTableViewCell.swift in Sources */,
 				4C2ACE3826D325BA006C9DD7 /* UIImageView+Extension.swift in Sources */,
+				4C2ACE5326D4C5B5006C9DD7 /* SmallTableCell.swift in Sources */,
 				4CBC12EC26BDB7C90010DD43 /* CollectionViewCell.swift in Sources */,
 				4CBC12EE26BE4E870010DD43 /* SampleData.swift in Sources */,
 				4C5E3E4726D06B0700F85CFE /* CardViewModel.swift in Sources */,
@@ -360,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -415,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

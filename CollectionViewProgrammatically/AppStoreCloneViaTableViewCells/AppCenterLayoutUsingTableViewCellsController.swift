@@ -1,5 +1,5 @@
 //
-//  TodayView.swift
+//  AppCenterLayoutUsingTableViewCellsController.swift
 //  TodayView
 //
 //  Created by Cong Le on 8/20/21.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AppStoreTodayLayoutViewController: UIViewController {
+class AppCenterLayoutUsingTableViewCellsController: UIViewController {
   // MARK: Views
   lazy var scrollView: UIScrollView = {
     let view = UIScrollView(frame: .zero)
@@ -84,10 +84,10 @@ class AppStoreTodayLayoutViewController: UIViewController {
   }
 }
 
-extension AppStoreTodayLayoutViewController {
+extension AppCenterLayoutUsingTableViewCellsController {
   func configureView() {
     view.backgroundColor = .cyan
-    navigationItem.title = "App Store Today Layout View Controller"
+    navigationItem.title = "App Store Today Layout via Table View Cells"
     configureScrollView()
     configureTopView()
     configureCardsView()
@@ -147,12 +147,12 @@ extension AppStoreTodayLayoutViewController {
   }
 }
 
-extension AppStoreTodayLayoutViewController: UIScrollViewDelegate {
+extension AppCenterLayoutUsingTableViewCellsController: UIScrollViewDelegate {
   
 }
 
 // MARK: - UITableViewDelegate
-extension AppStoreTodayLayoutViewController: UITableViewDelegate {
+extension AppCenterLayoutUsingTableViewCellsController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 450
   }
@@ -162,7 +162,7 @@ extension AppStoreTodayLayoutViewController: UITableViewDelegate {
 }
 
 //MARK: - UITableViewDataSource
-extension AppStoreTodayLayoutViewController: UITableViewDataSource {
+extension AppCenterLayoutUsingTableViewCellsController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return cardViewData.count
   }

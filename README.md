@@ -44,4 +44,5 @@ Initial setup:
   + https://www.zealousweb.com/how-to-use-compositional-layout-in-collection-view
   + https://lickability.com/blog/getting-started-with-uicollectionviewcompositionallayout
   + https://github.com/andrei-blaj/appstoreclone
+  + https://www.youtube.com/watch?v=SR7DtcT61tA&t=935s
 
