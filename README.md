@@ -4,7 +4,7 @@ Initial setup:
 - setup the window with navigationController with a root view controller 
 
 ## Using UICollectionViewFlowLayout to build collectionView: 
-- create a avaiable UICollectionViewFlowLayout anf configure it.
+- create a avaiable UICollectionViewFlowLayout and configure it.
 - create a variable UICollectionView using defined flowlayout ealier, assign delegates to self, and register a reusable UICollectionViewCell with unique identifier
 - create a class type UICollectionViewCell with a unique static identifier string. Then, calls designated initializer
 - create extensions and conform to UICollectionView delegates (UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout)
@@ -31,10 +31,17 @@ Initial setup:
 <img src="./Compositional-layout.png" width=300 height=600 align=center>
 </p>
 
+## Build App Center Today scene:
+- use table view cell inside another table view cell
+- loading local static data for demo 
+- parsing data via old method JSONSerialization (need to adopt to the mordern alternative approach)
+- TODO: Need to move this approach to tableView project app instead
+
 ## Notes: 
 - Compositional layout only supports for iOS 13 and above 
 
 - References: 
   + https://www.zealousweb.com/how-to-use-compositional-layout-in-collection-view
-  + https://lickability.com/blog/getting-started-with-uicollectionviewcompositionallayout/
+  + https://lickability.com/blog/getting-started-with-uicollectionviewcompositionallayout
+  + https://github.com/andrei-blaj/appstoreclone
 

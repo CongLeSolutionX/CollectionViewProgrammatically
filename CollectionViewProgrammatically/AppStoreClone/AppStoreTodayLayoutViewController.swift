@@ -25,14 +25,14 @@ class AppStoreTodayLayoutViewController: UIViewController {
   // MARK: - Top View -
   lazy var topView: UIView = {
     let view = UIView()
-    view.backgroundColor = .yellow
+    view.backgroundColor = .green
     view.translatesAutoresizingMaskIntoConstraints = false
     return view
   }()
   
   lazy var dateLabel: UILabel = {
     let label = UILabel()
-    //    label.translatesAutoresizingMaskIntoConstraints = false
+    label.translatesAutoresizingMaskIntoConstraints = false
     label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
     label.text = "SATURDAY, AUGUST 21"
     label.textColor = .lightGray
@@ -67,7 +67,7 @@ class AppStoreTodayLayoutViewController: UIViewController {
     tableView.translatesAutoresizingMaskIntoConstraints = false
     tableView.delegate = self
     tableView.dataSource = self
-//    tableView.separatorStyle = .none
+    //    tableView.separatorStyle = .none
     tableView.backgroundColor = .gray
     tableView.registerCell(GenericTableViewCell<CardView>.self)
     return tableView
@@ -109,6 +109,29 @@ extension AppStoreTodayLayoutViewController {
       topView.topAnchor.constraint(equalTo: scrollView.topAnchor),
       topView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
       topView.widthAnchor.constraint(equalToConstant: view.frame.size.width)
+    ])
+    
+    topView.addSubview(dateLabel)
+    NSLayoutConstraint.activate([
+      dateLabel.topAnchor.constraint(equalTo: topView.topAnchor, constant: 20.0),
+      dateLabel.leadingAnchor.constraint(equalTo: topView.leadingAnchor, constant: 20.0),
+      dateLabel.trailingAnchor.constraint(equalTo: topView.trailingAnchor, constant: -20.0)
+    ])
+    
+    topView.addSubview(todayLabel)
+    NSLayoutConstraint.activate([
+      todayLabel.topAnchor.constraint(equalTo: dateLabel.bottomAnchor, constant: 2.0),
+      todayLabel.leadingAnchor.constraint(equalTo: dateLabel.leadingAnchor),
+      todayLabel.bottomAnchor.constraint(equalTo: topView.bottomAnchor)
+    ])
+    
+    topView.addSubview(userImageView)
+    NSLayoutConstraint.activate([
+      userImageView.centerYAnchor.constraint(equalTo: todayLabel.centerYAnchor),
+      userImageView.trailingAnchor.constraint(equalTo: topView.trailingAnchor, constant: -20.0),
+      userImageView.widthAnchor.constraint(equalToConstant: 35.0),
+      userImageView.heightAnchor.constraint(equalTo: userImageView.widthAnchor, multiplier: 1.0),
+      userImageView.leadingAnchor.constraint(equalTo: todayLabel.trailingAnchor, constant: 8.0)
     ])
   }
   
