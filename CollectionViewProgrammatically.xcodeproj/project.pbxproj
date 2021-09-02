@@ -114,11 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				4C2ACE4026D49953006C9DD7 /* AppStoreViaCollectionViewDiffable.swift */,
-				4C2ACE5426D4C635006C9DD7 /* MediumTableCell.swift */,
-				4C2ACE5226D4C5B5006C9DD7 /* SmallTableCell.swift */,
-				4C2ACE4E26D4C4B2006C9DD7 /* FeaturedCell.swift */,
-				4C2ACE5026D4C4FB006C9DD7 /* SelfConfiguringCell.swift */,
-				4C2ACE4C26D4C418006C9DD7 /* SectionHeader.swift */,
+				4C2ACE5626D4CAE6006C9DD7 /* View */,
 				4C2ACE4A26D49D58006C9DD7 /* LocalData */,
 			);
 			path = AppStoreViaCollectionViewDiffable;
@@ -140,6 +136,18 @@
 				4C2ACE4826D49D44006C9DD7 /* App.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4C2ACE5626D4CAE6006C9DD7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C2ACE4C26D4C418006C9DD7 /* SectionHeader.swift */,
+				4C2ACE5026D4C4FB006C9DD7 /* SelfConfiguringCell.swift */,
+				4C2ACE5426D4C635006C9DD7 /* MediumTableCell.swift */,
+				4C2ACE5226D4C5B5006C9DD7 /* SmallTableCell.swift */,
+				4C2ACE4E26D4C4B2006C9DD7 /* FeaturedCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4C5E3E3526CFB5FA00F85CFE /* ViewControllers */ = {

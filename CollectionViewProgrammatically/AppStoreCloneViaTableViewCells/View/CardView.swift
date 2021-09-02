@@ -49,14 +49,14 @@ class CardView: UIView {
     tableView.separatorStyle = .singleLine
     tableView.separatorInset = UIEdgeInsets(top: 0, left: 65, bottom: 0, right: 0)
     tableView.isScrollEnabled = false
-        tableView.registerCell(GenericTableViewCell<AppView>.self)
+    tableView.registerCell(GenericTableViewCell<AppView>.self)
     return tableView
   }()
   
   lazy var titleLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
-    //      label.textColor = cardModel.backgroundType.titleTextColor
+    label.textColor = cardModel.backgroundType.titleTextColor
     return label
   }()
   
@@ -64,14 +64,14 @@ class CardView: UIView {
   lazy var subtitleLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
-    //      label.textColor = cardModel.backgroundType.subtitleTextColor
+    label.textColor = cardModel.backgroundType.subtitleTextColor
     return label
   }()
   
   lazy var descriptionLabel: UILabel = {
     let label = UILabel()
     label.translatesAutoresizingMaskIntoConstraints = false
-    //      label.textColor = cardModel.backgroundType.subtitleTextColor
+    label.textColor = cardModel.backgroundType.subtitleTextColor
     return label
   }()
   
@@ -231,6 +231,7 @@ extension CardView {
     case .appCollection:
       addTopTitleLabels()
       addAppCollection()
+      tableView.reloadData()
     }
   }
   

@@ -39,6 +39,5 @@ class GenericTableViewCell<View: UIView>: UITableViewCell {
       cellView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
       cellView.bottomAnchor.constraint(equalTo: self.bottomAnchor)
     ])
-    
   }
 }
